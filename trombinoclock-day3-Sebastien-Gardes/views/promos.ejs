@@ -1,0 +1,19 @@
+
+<%- include('partials/header') %>
+
+  <h1>Liste des promos</h1>
+  
+
+  <div class="container">
+    <% for (let promotion of promos) { %>
+        <article class="card promo-card">
+            <img src="https://github.com/O-clock-<%= promotion.name %>.png" />
+            <a href="/promotions/<%= promotion.id %>" class="card-link">
+                <%= promotion.name %> 
+            </a>
+        </article>
+    <% } %>
+
+  </div>
+
+<%- include('partials/footer') %>

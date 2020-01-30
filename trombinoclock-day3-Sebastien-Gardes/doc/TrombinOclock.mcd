@@ -1,0 +1,3 @@
+promotion: id, name, github_organization
+belongs_to, 1N student, 0N promotion
+student: id, first_name, last_name, github_username

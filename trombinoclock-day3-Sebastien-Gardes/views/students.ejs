@@ -1,0 +1,23 @@
+
+<%- include('partials/header') %>
+
+  <h1>Liste des Étudiants
+    <% if (locals.goodPromo) { %>
+        de la promo <%= goodPromo.name %> 
+    <% } %>
+  </h1>
+
+
+  <div class="container">
+    <% for (let student of students) { %>
+        <article class="card student-card">
+            <img src="https://github.com/<%= student.github_username %>.png" />
+            <a href="/student/<%= student.id %>" class="card-link">
+                <%= student.first_name + ' ' + student.last_name %> 
+            </a>
+        </article>
+    <% } %>
+
+  </div>
+
+<%- include('partials/footer') %>
