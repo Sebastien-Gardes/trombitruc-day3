@@ -1,9 +1,9 @@
-DROP TABLE promo IF EXISTS;
+DROP TABLE "promo" IF EXISTS;
 
-CREATE TABLE promo (
-id INT NOT NULL PRIMARY KEY,
-name VARCHAR(128),
-github_organization VARCHAR(255) );
+CREATE TABLE "promo" (
+"id" INT NOT NULL PRIMARY KEY,
+"name" VARCHAR(128),
+"github_organization" VARCHAR(255) );
   
 INSERT INTO "promo" ("id", "name", "github_organization") VALUES 
 (5, "Cosmos", "https://github.com/O-clock-Cosmos"),
