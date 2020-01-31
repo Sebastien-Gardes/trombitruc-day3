@@ -5,7 +5,7 @@ id INT NOT NULL PRIMARY KEY,
 name VARCHAR(128),
 github_organization VARCHAR(255) );
   
-INSERT INTO promo (id, name, github_organization) VALUES 
+INSERT INTO "promo" ("id", "name", "github_organization") VALUES 
 (5, "Cosmos", "https://github.com/O-clock-Cosmos"),
 (6, "Discovery", "https://github.com/O-clock-Discovery"),
 (7, "ProjetBigBang", "null"),
@@ -42,14 +42,14 @@ INSERT INTO promo (id, name, github_organization) VALUES
 (149, "Dragons", "https://github.com/O-clock-Dragons"),
 (150, "Dungeons", "https://github.com/O-clock-Dungeons");DROP TABLE student IF EXISTS;
 
-CREATE TABLE student (
-id INT NOT NULL,
-first_name VARCHAR(128),
-last_name VARCHAR(128),
-github_username VARCHAR(255),
-promo_id INT);
+CREATE TABLE "student" (
+"id" INT NOT NULL,
+"first_name" VARCHAR(128),
+"last_name" VARCHAR(128),
+"github_username" VARCHAR(255),
+"promo_id" INT);
 
-INSERT INTO student (id, first_name,last_name,github_username, promo_id) VALUES 
+INSERT INTO "student" ("id", "first_name","last_name","github"_"username", "promo_id") VALUES 
 (114, "Leslie", "Maréchal", "null", 5),
 (115, "Johanna", "Msellati", "null", 5),
 (116, "Emmanuel", "Durouge", "null", 5),
